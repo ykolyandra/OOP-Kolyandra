@@ -1,0 +1,4 @@
+Максименко;Дар'я;Романівна;+380667303117;d.maksymenko@gmail.com;Одеса, вул. Набережна, 15;465333mdr45;0;C:\Users\Админ\Desktop\XAI\2 курс\2 семестр\ООП (КП)\icons\user.png
+Коляндра;Юлія;Миколаївна;+380993987910;yuliakolyandra@gmail.com;Харків, вул. Астрономічна, 5;yulia334559;0;C:\Users\Админ\Desktop\XAI\2 курс\2 семестр\ООП (КП)\icons\5.png
+Деліжан;Ірина;Сергіївна;+380665943760;delizhaniryna@gmail.com;Київ, вул. Незалежності, 45;delizhan7642iryna;0;"C:\Users\Админ\Desktop\XAI\2 курс\2 семестр\ООП (КП)\icons\user.png"
+Харько;Софія;Анатоліївна;+380519933396;sofia@gmail.com;вул. Бочанська 4;143post555;0;C:\Users\Админ\Desktop\XAI\2 курс\2 семестр\ООП (КП)\icons\user.png

@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{451054E9-216D-43ED-9292-DA7EFD557B33}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OOP</RootNamespace>
+    <AssemblyName>OOP</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.7.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.7.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=7.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.7.0.2\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Code\Classes\Admin.cs" />
+    <Compile Include="Code\Classes\Guest.cs" />
+    <Compile Include="Code\Interfaces\IEnumerator.cs" />
+    <Compile Include="Code\Interfaces\IPrintable.cs" />
+    <Compile Include="Code\Interfaces\IWorker.cs" />
+    <Compile Include="DesingForms\Workers\Admin\NewOperator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesingForms\Workers\Admin\NewOperator.Designer.cs">
+      <DependentUpon>NewOperator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Classes\Operator.cs" />
+    <Compile Include="Code\Collections\OperatorList.cs" />
+    <Compile Include="Code\Enums\PaymentStatus.cs" />
+    <Compile Include="Code\Classes\PostBox.cs" />
+    <Compile Include="Code\Collections\PostBoxList.cs" />
+    <Compile Include="Code\Enums\Status.cs" />
+    <Compile Include="Code\Enums\City.cs" />
+    <Compile Include="Code\Collections\Tarriffs.cs" />
+    <Compile Include="Code\Classes\User.cs" />
+    <Compile Include="Code\Collections\UserList.cs" />
+    <Compile Include="Code\Classes\User_Abstract.cs" />
+    <Compile Include="DesingForms\Workers\Admin\AdminDesign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesingForms\Workers\Admin\AdminDesign.Designer.cs">
+      <DependentUpon>AdminDesign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesingForms\Workers\Admin\AdminShowInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesingForms\Workers\Admin\AdminShowInfo.Designer.cs">
+      <DependentUpon>AdminShowInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesingForms\Users\Calculation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesingForms\Users\Calculation.Designer.cs">
+      <DependentUpon>Calculation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesingForms\Users\RegisteredUser\ChangeInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesingForms\Users\RegisteredUser\ChangeInfo.Designer.cs">
+      <DependentUpon>ChangeInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesingForms\Users\RegisteredUser\EditPost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesingForms\Users\RegisteredUser\EditPost.Designer.cs">
+      <DependentUpon>EditPost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesingForms\Users\Guest\GuestFind.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesingForms\Users\Guest\GuestFind.Designer.cs">
+      <DependentUpon>GuestFind.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesingForms\Users\Guest\GuestDesign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesingForms\Users\Guest\GuestDesign.Designer.cs">
+      <DependentUpon>GuestDesign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesingForms\LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesingForms\LogIn.Designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesingForms\Users\RegisteredUser\MyPosts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesingForms\Users\RegisteredUser\MyPosts.Designer.cs">
+      <DependentUpon>MyPosts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesingForms\Users\RegisteredUser\NewPost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesingForms\Users\RegisteredUser\NewPost.Designer.cs">
+      <DependentUpon>NewPost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesingForms\Workers\Admin\NewPromocode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesingForms\Workers\Admin\NewPromocode.Designer.cs">
+      <DependentUpon>NewPromocode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesingForms\Workers\Operator\OperatorDesign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesingForms\Workers\Operator\OperatorDesign.Designer.cs">
+      <DependentUpon>OperatorDesign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesingForms\Users\RegisteredUser\Pay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesingForms\Users\RegisteredUser\Pay.Designer.cs">
+      <DependentUpon>Pay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesingForms\SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesingForms\SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesingForms\Workers\WorkerEditPosts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesingForms\Workers\WorkerEditPosts.Designer.cs">
+      <DependentUpon>WorkerEditPosts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesingForms\Workers\Operator\WorkerShowPosts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesingForms\Workers\Operator\WorkerShowPosts.Designer.cs">
+      <DependentUpon>WorkerShowPosts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DesingForms\Users\RegisteredUser\UserDesign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesingForms\Users\RegisteredUser\UserDesign.Designer.cs">
+      <DependentUpon>UserDesign.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DesingForms\Workers\Admin\NewOperator.resx">
+      <DependentUpon>NewOperator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesingForms\Workers\Admin\AdminDesign.resx">
+      <DependentUpon>AdminDesign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesingForms\Workers\Admin\AdminShowInfo.resx">
+      <DependentUpon>AdminShowInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesingForms\Users\Calculation.resx">
+      <DependentUpon>Calculation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesingForms\Users\RegisteredUser\ChangeInfo.resx">
+      <DependentUpon>ChangeInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesingForms\Users\RegisteredUser\EditPost.resx">
+      <DependentUpon>EditPost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesingForms\Users\Guest\GuestFind.resx">
+      <DependentUpon>GuestFind.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesingForms\Users\Guest\GuestDesign.resx">
+      <DependentUpon>GuestDesign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesingForms\LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesingForms\Users\RegisteredUser\MyPosts.resx">
+      <DependentUpon>MyPosts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesingForms\Users\RegisteredUser\NewPost.resx">
+      <DependentUpon>NewPost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesingForms\Workers\Admin\NewPromocode.resx">
+      <DependentUpon>NewPromocode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesingForms\Workers\Operator\OperatorDesign.resx">
+      <DependentUpon>OperatorDesign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesingForms\Users\RegisteredUser\Pay.resx">
+      <DependentUpon>Pay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesingForms\Workers\WorkerEditPosts.resx">
+      <DependentUpon>WorkerEditPosts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesingForms\Workers\Operator\WorkerShowPosts.resx">
+      <DependentUpon>WorkerShowPosts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DesingForms\SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesingForms\Users\RegisteredUser\UserDesign.resx">
+      <DependentUpon>UserDesign.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

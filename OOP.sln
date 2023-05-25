@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_Kolyandra", "OOP\OOP_Kolyandra.csproj", "{451054E9-216D-43ED-9292-DA7EFD557B33}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProject", "TestProject\TestProject.csproj", "{6B94392F-2437-4C72-B082-4DF9D2C54620}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{451054E9-216D-43ED-9292-DA7EFD557B33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{451054E9-216D-43ED-9292-DA7EFD557B33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{451054E9-216D-43ED-9292-DA7EFD557B33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{451054E9-216D-43ED-9292-DA7EFD557B33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B94392F-2437-4C72-B082-4DF9D2C54620}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B94392F-2437-4C72-B082-4DF9D2C54620}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B94392F-2437-4C72-B082-4DF9D2C54620}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B94392F-2437-4C72-B082-4DF9D2C54620}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {76584F61-1263-4B67-B383-7481B4B9DD39}
+	EndGlobalSection
+EndGlobal
